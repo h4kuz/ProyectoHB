@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+/* Reset CSS */
+body, h1, h2, h3, p, ul, li, input {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Nunito, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+}
+
+
+.busqueda {
+    margin-top: 20px;
+    position: relative;
+}
+
+.busqueda input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.busqueda i {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: #333;
+}
+
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.linea-decorativa {
+    display: flex;
+}
+
+.circulo {
+    width: 15px;
+    height: 15px;
+    background-color: #FFD700;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.left {
+    flex: 1;
+    text-align: center;
+}
+
+.left h2 {
+    margin-bottom: 20px;
+}
+
+.left p {
+    line-height: 1.9;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.left button {
+    background-color: #FFD700;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.redes {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.redes a {
+    display: inline-block;
+    margin-right: 10px;
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.redes a:hover {
+    color: #FFD700;
+}
+
+
+.right {
+    flex: 1;
+}
+
+.Popular {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.contenedor-fotos {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinear las imágenes en la parte superior */
+    flex-wrap: wrap; 
+    margin-bottom: 20px;
+}
+
+.contenedor-fotos img {
+    width: calc(33.33% - 10px); 
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+
+.contenedor::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('tingo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: blur(10px);
+    z-index: -1;
+}
